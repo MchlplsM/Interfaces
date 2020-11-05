@@ -8,5 +8,6 @@ namespace Interfaces.Interfaces
 {
     interface IBoatActions
     {
+        void Reverse();
     }
 }

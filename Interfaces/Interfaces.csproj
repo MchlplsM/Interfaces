@@ -58,6 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IAutoMobileActions.cs" />
     <Compile Include="Interfaces\IBoatActions.cs" />
     <Compile Include="Interfaces\ICarActions.cs" />
     <Compile Include="Interfaces\IMotorBikeActions.cs" />

@@ -8,5 +8,7 @@ namespace Interfaces.Interfaces
 {
     interface IMotorBikeActions
     {
+        void Break();
+
     }
 }

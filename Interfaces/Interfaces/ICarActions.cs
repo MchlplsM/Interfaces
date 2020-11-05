@@ -8,5 +8,8 @@ namespace Interfaces.Interfaces
 {
     interface ICarActions
     {
+        
+        void Break();
+        void Reverse();
     }
 }

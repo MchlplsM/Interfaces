@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Interfaces.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Interfaces.Models
 {
-    class MotorBike : AutoMobile
+    class MotorBike : AutoMobile, IAutoMobileActions, IMotorBikeActions
     {
         public MotorBike()
         {
@@ -19,21 +20,26 @@ namespace Interfaces.Models
         }
 
         //Method
+        
+        public void SteerLeft()// Have to use override for abstraction
+        {
+            Console.WriteLine("The motorbike is steering left.");
+            this.Bool_Steering = true;
+            Console.WriteLine(this.Bool_Steering);
+        }
+        public void SteerRight()// Have to use override for abstraction
+        {
+            Console.WriteLine("The motorbike is steering right.");
+            this.Bool_Steering = false;
+            Console.WriteLine(this.Bool_Steering);
+        }
+        public void Steer(bool steerLeft)
+        {
+
+        }
         public void Break()
         {
             Console.WriteLine("The motorbike is breaking");
-        }
-        public override void SteerLeft()// Have to use override for abstraction
-        {
-            Console.WriteLine("The motorbike is steering left.");
-        }
-        public override void SteerRight()// Have to use override for abstraction
-        {
-            Console.WriteLine("The motorbike is steering right.");
-        }
-        public override void Steer(bool steerLeft)
-        {
-
         }
     }
 }

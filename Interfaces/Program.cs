@@ -14,6 +14,8 @@ namespace Interfaces
             Console.WriteLine("Car c");
             Car c = new Car(true);
             c.SteerLeft();
+            c.SteerRight();
+            c.Stop();
 
             Console.WriteLine("car car");
             Car car = new Car();
@@ -22,7 +24,7 @@ namespace Interfaces
             car.SteerLeft();
             car.SteerRight();
             //with private set it doesnt work
-            //
+            //car.IsOn = false;
             car.Stop();
             Console.WriteLine(car.IsOn);
 
